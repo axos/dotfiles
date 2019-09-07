@@ -90,10 +90,11 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bower colored-man debian git k node npm z zsh-autosuggestions)
+plugins=(bower colored-man-pages debian git node npm)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.env
+# Uncomment following line if environment file is created
+# source $HOME/.env
 
 setopt completealiases
 
@@ -114,7 +115,5 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-. /home/axos/z/z.sh
 
 eval "$(grunt --completion=zsh)"
