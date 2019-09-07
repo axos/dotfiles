@@ -1,0 +1,13 @@
+rules:
+  class-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
+  force-element-nesting: 1
+  mixins-before-declarations:
+    - 1
+    -
+      exclude: ['respond-to']
+  no-color-keywords: 0
+  no-css-comments: 0
+  no-warn: 0
