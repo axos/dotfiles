@@ -1,5 +1,16 @@
 # axos' dotfiles
 
+## Prerequisites
+* Unix-like operating system (macOS or Linux)
+* `curl` and/or `wget` should be installed
+* `git` should be installed
+* [Z shell](https://www.zsh.org/) (install `zsh`)
+* [Antigen](http://antigen.sharats.me/) (run `curl -L git.io/antigen > antigen.zsh` in your home folder)
+
+### Recommendations
+
+* [fasd](https://github.com/clvv/fasd)
+
 ## Config files
 
 There are config files for
