@@ -23,6 +23,10 @@ Symlink all needed files to your home directory. With this approach all symlinke
 
 `ln -sv ~/.dotfiles/.zshrc ~`
 
+### Symlinking with bootstrap script
+
+You can also run the bootstrap script in order to symlink all dotfiles to your home directory. It excludes any files that have `.exclude` in their filename. Run `sh bootstrap.exclude.sh` while in your `.dotfiles` directory.
+
 ## Config files
 
 There are config files for
