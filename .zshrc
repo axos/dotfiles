@@ -59,4 +59,9 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+
+if [ $commands[fasd] ]; then # check if fasd is installed
+  eval "$(fasd --init auto)"
+fi
+
 eval "$(grunt --completion=zsh)"
