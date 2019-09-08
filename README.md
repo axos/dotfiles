@@ -13,7 +13,7 @@
 
 ## Getting started
 
-In your home folder, clone this repo with `git clone https://github.com/axos/dotfiles.git .dotfiles` or `git clone git@github.com:axos/dotfiles.git .dotfiles`. Be sure to clone it to `.dotfiles` (with a `.`).
+Clone this repo with `git clone https://github.com/axos/dotfiles.git .dotfiles` or `git clone git@github.com:axos/dotfiles.git .dotfiles`. You can also clone this to `git clone`'s default `dotfiles` folder (without the `.`), but it is recommended to clone it into `.dotfiles` in your home directory.
 
 ### Symlinking files
 

@@ -18,7 +18,7 @@ antigen bundle supercrabtree/k
 antigen bundle zsh-users/zsh-autosuggestions
 
 # Load the theme from .dotfiles folder
-antigen bundle $HOME/.dotfiles/.oh-my-zsh/custom/themes bureau.zsh-theme --no-local-clone
+antigen bundle $HOME/.oh-my-zsh/custom/themes bureau.zsh-theme --no-local-clone
 
 antigen apply
 
