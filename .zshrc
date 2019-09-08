@@ -22,24 +22,7 @@ antigen bundle $HOME/.dotfiles/.oh-my-zsh/custom/themes bureau.zsh-theme --no-lo
 
 antigen apply
 
-# Example aliases
-alias c="clear"
-alias x="exit"
-
-# List only directories
-alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
-
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
-
-# Gzip-enabled `curl`
-alias gurl='curl --compressed'
-
-# Get week number
-alias week='date +%V'
-
-# Stopwatch
-alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+source .aliases
 
 # User configuration
 
