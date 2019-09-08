@@ -4,8 +4,8 @@
 * Unix-like operating system (macOS or Linux)
 * `curl` and/or `wget` should be installed
 * `git` should be installed
-* [Z shell](https://www.zsh.org/) (install `zsh`)
-* [Antigen](http://antigen.sharats.me/) (run `curl -L git.io/antigen > antigen.zsh` in your home folder)
+* [Z shell](https://www.zsh.org/): Install `zsh`
+* [Antigen](http://antigen.sharats.me/): Run `curl -L git.io/antigen > .antigen.zsh` in your home folder. Be sure to install it to `.antigen.zsh` (with a `.`)
 
 ### Recommendations
 
