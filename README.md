@@ -35,3 +35,8 @@ There are config files for
 * [stylelint](https://stylelint.io/) (`.stylelintrc.json`)
 
 They are mostly be used as global configuration files or can be copied to project folder. If copied to project, feel free to adjust them according to your project requirements.
+
+## Acknowledgements
+
+* [@ajmalsiddiqui](https://github.com/ajmalsiddiqui) and his article [How to make your Dotfile management a painless affair](https://www.freecodecamp.org/news/dive-into-dotfiles-part-2-6321b4a73608/)
+* [@robbyrussell](https://github.com/robbyrussell) for the awesome [oh-my-zsh](https://ohmyz.sh/)
