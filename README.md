@@ -11,6 +11,10 @@
 
 * [fasd](https://github.com/clvv/fasd)
 
+## Getting started
+
+* In your home folder, clone this repo with `git clone https://github.com/axos/dotfiles.git .dotfiles` or `git clone git@github.com:axos/dotfiles.git .dotfiles`. Be sure to clone it to `.dotfiles` (with a `.`).
+
 ## Config files
 
 There are config files for
