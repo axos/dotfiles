@@ -13,7 +13,15 @@
 
 ## Getting started
 
-* In your home folder, clone this repo with `git clone https://github.com/axos/dotfiles.git .dotfiles` or `git clone git@github.com:axos/dotfiles.git .dotfiles`. Be sure to clone it to `.dotfiles` (with a `.`).
+In your home folder, clone this repo with `git clone https://github.com/axos/dotfiles.git .dotfiles` or `git clone git@github.com:axos/dotfiles.git .dotfiles`. Be sure to clone it to `.dotfiles` (with a `.`).
+
+### Symlinking files
+
+Symlink all needed files to your home directory. With this approach all symlinked files in your home directory are actually aliases to the original files in your `.dotfiles` directory. Whenever you change them, the original files are automatically updated in the repository.
+
+#### Example
+
+`ln -sv ~/.dotfiles/.zshrc ~`
 
 ## Config files
 
