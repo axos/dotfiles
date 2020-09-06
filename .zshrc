@@ -48,3 +48,7 @@ if [ $commands[fasd] ]; then # check if fasd is installed
 fi
 
 eval "$(grunt --completion=zsh)"
+
+# load fuzzy finder https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
