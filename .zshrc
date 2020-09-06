@@ -1,5 +1,7 @@
+source $HOME/.env
+
 # Antigen configuration
-source .antigen.zsh
+source $HOME/.antigen.zsh
 
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
@@ -22,7 +24,7 @@ antigen bundle $HOME/.oh-my-zsh/custom/themes bureau.zsh-theme --no-local-clone
 
 antigen apply
 
-source .aliases
+source $HOME/.aliases
 
 # User configuration
 
@@ -42,9 +44,9 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-
 if [ $commands[fasd] ]; then # check if fasd is installed
   eval "$(fasd --init auto)"
 fi
 
+# load grunt
 eval "$(grunt --completion=zsh)"
