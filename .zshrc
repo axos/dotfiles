@@ -16,6 +16,7 @@ antigen bundle npm
 # Other bundles
 antigen bundle supercrabtree/k
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle djui/alias-tips
 
 # Load the theme from .dotfiles folder
 antigen bundle $HOME/.oh-my-zsh/custom/themes bureau.zsh-theme --no-local-clone
