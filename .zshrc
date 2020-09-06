@@ -1,5 +1,7 @@
+source $HOME/.env
+
 # Antigen configuration
-source .antigen.zsh
+source $HOME/.antigen.zsh
 
 # Load the oh-my-zsh's library
 antigen use oh-my-zsh
@@ -16,13 +18,17 @@ antigen bundle npm
 # Other bundles
 antigen bundle supercrabtree/k
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle djui/alias-tips
 
 # Load the theme from .dotfiles folder
 antigen bundle $HOME/.oh-my-zsh/custom/themes bureau.zsh-theme --no-local-clone
 
 antigen apply
 
-source .aliases
+source $HOME/.aliases
+
+# load navi https://github.com/denisidoro/navi
+source "$(navi widget zsh)"
 
 # User configuration
 
@@ -42,12 +48,21 @@ export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-
 if [ $commands[fasd] ]; then # check if fasd is installed
   eval "$(fasd --init auto)"
 fi
 
+# load grunt
 eval "$(grunt --completion=zsh)"
+
+# load bashcompinit
+autoload -U +X bashcompinit && bashcompinit
+
+# load fuzzy finder https://github.com/junegunn/fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# load minio client
+complete -o nospace -C /usr/local/bin/mc mc
 
 # load nvm
 export NVM_DIR="$HOME/.nvm"
