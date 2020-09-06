@@ -61,4 +61,5 @@ autoload -U +X bashcompinit && bashcompinit
 # load fuzzy finder https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
+# load minio client
+complete -o nospace -C /usr/local/bin/mc mc
