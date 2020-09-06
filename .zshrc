@@ -48,3 +48,6 @@ if [ $commands[fasd] ]; then # check if fasd is installed
 fi
 
 eval "$(grunt --completion=zsh)"
+
+# load minio client
+complete -o nospace -C /usr/local/bin/mc mc
