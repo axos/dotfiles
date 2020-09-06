@@ -78,7 +78,7 @@ else
   _USERNAME="%{$fg_bold[yellow]%}%n"
   _LIBERTY="%{$fg_bold[green]%}$"
 fi
-_USERNAME="$_USERNAME%{$reset_color%}@%{$fg_bold[red]%}%m"
+_USERNAME="$_USERNAME%{$reset_color%}@%{$fg_bold[$ZSH_PROMPT_HOST_COLOR]%}%m"
 _LIBERTY="$_LIBERTY%{$reset_color%}"
 
 
