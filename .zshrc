@@ -24,6 +24,9 @@ antigen apply
 
 source .aliases
 
+# load navi https://github.com/denisidoro/navi
+source "$(navi widget zsh)"
+
 # User configuration
 
 export PATH="/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
