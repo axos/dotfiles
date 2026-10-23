@@ -1,5 +1,6 @@
 # --- Machine-Specific Local Overrides ---
 .zshrc.local
+.aliases.local
 .env.local
 
 # --- Operating System Junk ---

@@ -1,18 +1,43 @@
-# Example aliases
+# General / Navigation Shortcuts
 alias c="clear"
+alias h="cd ~"
+alias hc="cd ~ && clear"
 alias x="exit"
+alias .="nvim"
+alias bt="btop"
+alias cm="cmatrix -xos"
+alias ha="ha-cli"
 
-# List only directories
-alias lsd="ls -lhF ${colorflag} | grep --color=never '^d'"
+# Tmux
+alias t="tmux"
+alias ta="tmux attach"
+alias tt="tmux attach -t"
+alias tl="tmux ls"
+alias td="tmux detach"
 
-# Enable aliases to be sudo’ed
-alias sudo='sudo '
+# Git & Tools
+alias lg="lazygit"
+alias dc="docker compose"
 
-# Gzip-enabled `curl`
-alias gurl='curl --compressed'
+# Modern 'eza' (replacement for ls)
+alias ls="eza"
+alias l="eza -alh"
+alias la="eza -a"
+alias ll="eza -lh"
+alias lsd="eza -laDh"
+alias lt="eza -alhTL 5"
 
-# Get week number
-alias week='date +%V'
+# Wayland / Cliphist Clipboard Shortcuts
+alias cls="cliphist list | fzf --no-sort | cliphist decode | wl-copy"
+alias clr="cliphist list | fzf --no-sort | cliphist delete"
 
-# Stopwatch
+# Shell Utilities
+alias sudo='sudo '                         # Enable aliases to be run with sudo
+alias gurl='curl --compressed'            # Gzip-enabled curl
+alias week='date +%V'                     # Get current week number
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# Load machine-specific local aliases if they exist (ignored by git)
+if [ -f "$HOME/.aliases.local" ]; then
+    source "$HOME/.aliases.local"
+fi
