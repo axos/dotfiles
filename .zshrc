@@ -28,7 +28,7 @@ eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 
 # Load navi cheatsheet widget
-source "$(navi widget zsh)"
+source <(navi widget zsh)
 
 # Keybindings & Completion Settings
 bindkey -v
